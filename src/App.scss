@@ -1,0 +1,220 @@
+$main-gradient: linear-gradient(135deg, #00d8ff 0%, #7db9e8 100%);
+$alt-gradient: linear-gradient(200deg, #84fab0 0%, #8fd3f4 100%);
+$body-gradient: linear-gradient(100deg, #ddd6f3, #faaca8);
+$alt-body-gradient: linear-gradient(120deg, #fa5b42, #ffb88c);
+$font-main: -apple-system, BlinkMacSystemFont, sans-serif;
+$font-serif: Georgia, serif;
+$light-grey: #f8f8f8;
+$dark-grey: #4d4d4d;
+$main-blue: #00c5cc;
+$heading-shadow:-2px 2px 0px #009eb8, -3px 3px 0px #00aea7;
+$title-shadow: -1px 1px 1px rgba(0, 0, 0, 0.22);
+$nav-shadow:0px 1px 3px rgba(#808080, 0.13);
+$danger: #fa8072;
+$success: #33cfa4;
+$bold-grey:#9d9d9d;
+$title-gradient:linear-gradient(90deg,rgba(0, 191, 255, 0.56),#9fecf0);
+$ridiculous:
+  -3px 3px 0px #009eb8,
+  -6px 6px 0px #00aea7,
+  -9px 9px 0px #33b9cf,
+  -12px 12px 0px #33c8cf,
+  -15px 15px 0px #33cfa4;
+$slant-div:
+  0px -2rem 0px rgba(255, 255, 255, 0.5),
+  0px -4rem 0px rgba(255, 255, 255, 0.4),
+  0px -6rem 0px rgba(255, 255, 255, 0.3),
+  0px -8rem 0px rgba(255, 255, 255, 0.1);
+
+$slant-div-lower:
+  0px 2rem 0px rgba(255, 255, 255, 0.5),
+  0px 4rem 0px rgba(255, 255, 255, 0.4),
+  0px 6rem 0px rgba(255, 255, 255, 0.3),
+  0px 8rem 0px rgba(255, 255, 255, 0.1);
+
+$margin: 0rem 5rem;
+
+
+a {
+  text-decoration: none;
+}
+body{
+  font-family:$font-main;
+  background:$alt-body-gradient;
+  margin:0px;
+}
+
+.flex-space-around{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.flex-space-around{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.flex-space-between{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.flex-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.header{
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 1;
+  background:white;
+}
+.main{
+  margin:5rem 0rem;
+}
+
+.banner{
+  background:url("'../images/trop1.jpg'");
+  width:100px;
+  height: 100px;
+}
+
+.logo{
+  width: 3.5rem;
+  padding:1rem;
+  fill:white;
+}
+.logo-lower{
+  width: 15rem;
+  padding:2rem;
+}
+
+.projects{
+  display:flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.splash h1{
+  color:white;
+  font-size: 8rem;
+  padding:1rem;
+  margin:-1rem 10rem 12rem;
+}
+.heading{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:1rem;
+  margin:$margin;
+}
+
+.footer{
+  margin-top: 10rem;
+  padding: 13rem 0rem;
+  height:10rem;
+  text-align: center;
+  background: $alt-body-gradient;
+  color:white;
+}
+.contact{
+  line-height: 2rem;
+  font-size: 1.3rem;
+  text-align: left;
+}
+
+.project-tile{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 33rem;
+  height: 33rem;
+  background-size: cover;
+  color:white;
+  margin: 2rem;
+}
+.project-tile p.title{
+  margin-bottom: 0px;
+  font-size: 4rem;
+  text-align: center;
+  background:$title-gradient;
+  padding:0.5rem;
+}
+
+.project-tile .description{
+  font-size: 3rem;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.contents-container{
+  background: white;
+}
+
+.slant-div{
+  background: white;
+  height: 15rem;
+  margin: -5rem 0 -1rem -1rem;
+  width: 110%;
+  transform: skew(-2deg, 4deg);
+  z-index: -1;
+  position: absolute;
+  box-shadow: $slant-div;
+}
+.slant-div-lower{
+  background: white;
+  height: 15rem;
+  margin: 4rem 0rem 0rem 0rem;
+  width: 110%;
+  transform: skew(-2deg, 4deg);
+  position: absolute;
+  box-shadow: $slant-div-lower;
+}
+
+.social *{
+  color:white;
+  margin:1rem;
+  font-size: 4rem;
+}
+
+.contents{
+  padding:1rem;
+}
+.containment{
+  position: relative;
+  overflow-x: hidden;
+}
+.icons{
+  margin:0rem 0rem 5rem;
+}
+.icons *{
+  width: 20rem;
+  height: 20rem;
+  padding:5rem;
+}
+/* KEYFRAMES
+*********/
+
+.button-hover {
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+  transform: perspective(1px) translateZ(0);
+  transition-duration: 0.3s;
+  transition-property: transform;
+  transition-timing-function: ease-out;
+}
+
+.button-hover:hover, .button-hover:focus, .button-hover:active {
+  transform: translateY(3px);
+}

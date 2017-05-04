@@ -1,0 +1,256 @@
+
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 548 548.68">
+    <defs>
+        <linearGradient id="linear" x1="0%" y1="0%" x2="100%" y2="50%">
+            <stop offset="-50%"   stop-color="#fa5b42"/>
+            <stop offset="150%" stop-color="#fa7f42"/>
+        </linearGradient>
+        <style>
+            .cls-1,
+            .cls-18,
+            .cls-27,
+            .cls-3 {
+                fill: url(#linear);
+            }
+
+            .cls-2 {
+                fill: none;
+                stroke: url(#linear);
+                stroke-linecap: round;
+                stroke-miterlimit: 10;
+                stroke-width: 30px;
+            }
+
+            .cls-3 {
+                opacity: 0.08;
+                font-size: 43.09px;
+            }
+
+            .cls-18,
+            .cls-27,
+            .cls-3 {
+                font-family: FilsonSoftRegular, Filson Soft;
+            }
+
+            .cls-4 {
+                letter-spacing: 0em;
+            }
+
+            .cls-5 {
+                letter-spacing: -0.01em;
+            }
+
+            .cls-6 {
+                letter-spacing: -0.01em;
+            }
+
+            .cls-7 {
+                letter-spacing: -0.11em;
+            }
+
+            .cls-8 {
+                letter-spacing: -0.01em;
+            }
+
+            .cls-9 {
+                letter-spacing: -0.01em;
+            }
+
+            .cls-10 {
+                letter-spacing: -0.02em;
+            }
+
+            .cls-11 {
+                letter-spacing: -0.01em;
+            }
+
+            .cls-12 {
+                letter-spacing: -0.03em;
+            }
+
+            .cls-13 {
+                letter-spacing: -0.02em;
+            }
+
+            .cls-14 {
+                letter-spacing: -0.01em;
+            }
+
+            .cls-15 {
+                letter-spacing: -0.01em;
+            }
+
+            .cls-16 {
+                letter-spacing: -0.02em;
+            }
+
+            .cls-17 {
+                opacity: 0.13;
+            }
+
+            .cls-18 {
+                font-size: 63.16px;
+            }
+
+            .cls-19 {
+                letter-spacing: -0.01em;
+            }
+
+            .cls-20 {
+                letter-spacing: -0.01em;
+            }
+
+            .cls-21 {
+                letter-spacing: -0.04em;
+            }
+
+            .cls-22 {
+                letter-spacing: -0.01em;
+            }
+
+            .cls-23 {
+                letter-spacing: 0em;
+            }
+
+            .cls-24 {
+                letter-spacing: -0.02em;
+            }
+
+            .cls-25 {
+                letter-spacing: -0.02em;
+            }
+
+            .cls-26 {
+                letter-spacing: -0.01em;
+            }
+
+            .cls-27 {
+                opacity: 0.4;
+                font-size: 97.69px;
+            }
+
+            .cls-28 {
+                letter-spacing: 0em;
+            }
+
+            .cls-29 {
+                letter-spacing: 0em;
+            }
+
+            .cls-30 {
+                letter-spacing: -0.01em;
+            }
+
+            .cls-31 {
+                letter-spacing: 0em;
+            }
+
+            .cls-32 {
+                letter-spacing: -0.01em;
+            }
+
+            .cls-33 {
+                letter-spacing: -0.1em;
+            }
+        </style>
+    </defs>
+    <title>Dev</title>
+    <g id="Layer_2" data-name="Layer 2">
+        <g id="finals">
+            <path class="cls-1" d="M468,30.68a50.15,50.15,0,0,1,50,50v388a50.15,50.15,0,0,1-50,50H80a50.15,50.15,0,0,1-50-50v-388a50.15,50.15,0,0,1,50-50H468m0-30H80a80.09,80.09,0,0,0-80,80v388a80.09,80.09,0,0,0,80,80H468a80.09,80.09,0,0,0,80-80v-388a80.09,80.09,0,0,0-80-80Z" />
+            <path class="cls-2" d="M105.72,88.68l63.86,63.86a1.43,1.43,0,0,1,0,2L105,219.15" />
+            <text class="cls-3" transform="translate(14.56 58.65)">import
+                <tspan class="cls-4" x="150.44" y="0">R</tspan>
+                <tspan x="180" y="0">eact, </tspan>
+                <tspan class="cls-5" x="296.95" y="0">{</tspan>
+                <tspan class="cls-6" x="310.48" y="0">C</tspan>
+                <tspan x="339.57" y="0">ompone</tspan>
+                <tspan x="0" y="41">import </tspan>
+                <tspan class="cls-7" x="150.44" y="41">&apos;</tspan>
+                <tspan x="155.43" y="41">./Dashboa</tspan>
+                <tspan class="cls-6" x="375.77" y="41">r</tspan>
+                <tspan x="391.33" y="41">d</tspan>
+                <tspan class="cls-6" x="419.16" y="41">.</tspan>
+                <tspan x="430.02" y="41">cs</tspan>
+                <tspan class="cls-5" x="472" y="41">s</tspan>
+                <tspan x="490.53" y="41">&apos;;</tspan>
+                <tspan x="0" y="123">class Dashboa</tspan>
+                <tspan class="cls-6" x="297.56" y="123">r</tspan>
+                <tspan x="313.11" y="123">d </tspan>
+                <tspan class="cls-8" x="352.24" y="123">e</tspan>
+                <tspan x="377.45" y="123">xtends </tspan>
+                <tspan x="0" y="205" xml:space="preserve"> </tspan>
+                <tspan class="cls-9" x="22.58" y="205">c</tspan>
+                <tspan x="44.95" y="205">onstructor</tspan>
+                <tspan class="cls-10" x="259.59" y="205">(</tspan>
+                <tspan x="272.26" y="205">p</tspan>
+                <tspan class="cls-11" x="300.06" y="205">r</tspan>
+                <tspan x="315.57" y="205">op</tspan>
+                <tspan class="cls-12" x="369.48" y="205">s</tspan>
+                <tspan x="387.4" y="205">) {</tspan>
+                <tspan x="0" y="246" xml:space="preserve"> super</tspan>
+                <tspan class="cls-13" x="159.79" y="246">(</tspan>
+                <tspan x="172.46" y="246">p</tspan>
+                <tspan class="cls-14" x="200.25" y="246">r</tspan>
+                <tspan x="215.76" y="246">op</tspan>
+                <tspan class="cls-12" x="269.67" y="246">s</tspan>
+                <tspan x="287.6" y="246">)</tspan>
+                <tspan x="0" y="287" xml:space="preserve"> this.state = {</tspan>
+                <tspan x="0" y="328" xml:space="preserve"> email: &quot;</tspan>
+                <tspan class="cls-7" x="226.02" y="328">&quot;</tspan>
+                <tspan x="240.11" y="328">,</tspan>
+                <tspan x="0" y="369" xml:space="preserve"> userPlaylists: [],</tspan>
+                <tspan x="0" y="410" xml:space="preserve"> su</tspan>
+                <tspan class="cls-9" x="112.9" y="410">cc</tspan>
+                <tspan x="157.63" y="410">ess</tspan>
+                <tspan class="cls-15" x="221.63" y="410">M</tspan>
+                <tspan x="262.43" y="410">essage: &apos;</tspan>
+                <tspan class="cls-7" x="441.09" y="410">&apos;</tspan>
+                <tspan x="446.09" y="410">,</tspan>
+                <tspan x="0" y="451" xml:space="preserve"> loading: </tspan>
+                <tspan class="cls-16" x="249.2" y="451">f</tspan>
+                <tspan x="264.46" y="451">alse</tspan>
+            </text>
+            <g class="cls-17">
+                <text class="cls-18" transform="translate(15 123.6)">
+                    <tspan xml:space="preserve"> </tspan>
+                    <tspan class="cls-19" x="33.1" y="0">c</tspan>
+                    <tspan x="65.88" y="0">ompone</tspan>
+                    <tspan class="cls-20" x="317.5" y="0">n</tspan>
+                    <tspan class="cls-21" x="355.33" y="0">t</tspan>
+                    <tspan x="379.65" y="0">Will</tspan>
+                    <tspan x="0" y="70" xml:space="preserve"> axios</tspan>
+                    <tspan class="cls-22" x="226.3" y="70">.</tspan>
+                    <tspan x="242.21" y="70">g</tspan>
+                    <tspan class="cls-23" x="282.89" y="70">e</tspan>
+                    <tspan x="320.34" y="70">t(</tspan>
+                    <tspan x="0" y="140" xml:space="preserve"> </tspan>
+                    <tspan x="0" y="210" xml:space="preserve"> )</tspan>
+                    <tspan class="cls-24" x="86.21" y="210">.</tspan>
+                    <tspan x="101.37" y="210">then</tspan>
+                    <tspan class="cls-25" x="242.15" y="210">(</tspan>
+                    <tspan class="cls-26" x="260.72" y="210">r</tspan>
+                    <tspan x="283.45" y="210">e</tspan>
+                    <tspan x="321.16" y="210">-</tspan>
+                    <tspan x="0" y="280">sponse {</tspan>
+                    <tspan x="0" y="350" xml:space="preserve"> this.s</tspan>
+                    <tspan class="cls-23" x="253.14" y="350">e</tspan>
+                    <tspan x="290.59" y="350">t</tspan>
+                    <tspan x="317.31" y="350">-</tspan>
+                </text>
+            </g>
+            <text class="cls-27" transform="translate(27 83.04)">SE
+                <tspan class="cls-28" x="114.79" y="0">_</tspan>
+                <tspan class="cls-29" x="183.66" y="0">UR</tspan>
+                <tspan class="cls-30" x="322" y="0">L</tspan>
+                <tspan class="cls-31" x="373.19" y="0">}</tspan>
+                <tspan x="0" y="216.55">is.p</tspan>
+                <tspan class="cls-32" x="157.28" y="216.55">r</tspan>
+                <tspan class="cls-29" x="192.45" y="216.55">ops </tspan>
+                <tspan class="cls-33" x="383.64" y="216.55">=</tspan>
+                <tspan class="cls-31" x="433.36" y="216.55" xml:space="preserve"> {</tspan>
+            </text>
+        </g>
+    </g>
+</svg>
