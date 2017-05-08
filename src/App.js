@@ -78,8 +78,8 @@ const BasicExample = () => (
           <img className="logo button-hover" src={logo}/>
         </Link>
         <div className="social">
-          <a><i className="fa fa-github button-hover" aria-hidden="true"></i></a>
-          <a><i className="fa fa-linkedin-square button-hover" aria-hidden="true"></i></a>
+          <a href="https://github.com/andrewmundy"><i className="fa fa-github button-hover" aria-hidden="true"></i></a>
+          <a href="https://www.linkedin.com/in/andrew-mundy/"><i className="fa fa-linkedin-square button-hover" aria-hidden="true"></i></a>
         </div>
       </div>
       <div className="splash flex-center">
