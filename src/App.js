@@ -24,6 +24,10 @@ var slowBack = {
   backgroundImage: `url(${slow})`,
 };
 
+var randomColor = {
+    body: {backgroundColor:'green',}
+};
+
 const Home = () => (
   <div>
   </div>
@@ -91,6 +95,7 @@ const BasicExample = () => (
             <img src={dev}/>
             <img src={design}/>
           </div>
+          <div className="projects"><h1>Projects</h1></div>
           <div className="projects flex-center">
 
             {/* CAMS */}
@@ -133,18 +138,18 @@ const BasicExample = () => (
           {/* FOOTER */}
       <div className="slant-div-lower"/>
         <div className="footer">
-          <div className="flex-space-around">
+          <div className="footing">
             <div className="contact">
-              <div><i className="fa fa-user" aria-hidden="true"></i> Andrew Mundy</div>
-              <div><i className="fa fa-map-marker" aria-hidden="true"></i> SF CA</div>
-              <div><i className="fa fa-mobile" aria-hidden="true"></i> (850)226-9048</div>
-              <div><i className="fa fa-envelope" aria-hidden="true"></i> andrewmundy@gmail.com</div>
-              <div><i className="fa fa-github" aria-hidden="true"></i> github.com/andrewmundy</div>
-              <div><i className="fa fa-linkedin-square" aria-hidden="true"></i> linkedin.com/andrewmundy</div>
-              <div><i className="fa fa-glass" aria-hidden="true"></i> Gin Stirred Twist</div>
+              <div><a href="https://www.google.com/maps/search/soma/@37.7808154,-122.4111944,15z/data=!3m1!4b1"><i className="fa fa-map-marker" aria-hidden="true"></i> San Francisco CA</a></div>
+              <div><i className="fa fa-mobile" aria-hidden="true"></i> <a href="tel:+1-850-226-9048">+1 (850)226-9048</a></div>
+              <div><i className="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:andrewmundy@gmail.com">andrewmundy@gmail.com</a></div>
+              <div><i className="fa fa-github" aria-hidden="true"></i> <a href="https://github.com/andrewmundy">github.com/andrewmundy</a></div>
+              <div><i className="fa fa-linkedin-square" aria-hidden="true"></i> <a href="https://www.linkedin.com/in/andrew-mundy/">linkedin.com/andrewmundy</a></div>
+              <div><i className="fa fa-glass" aria-hidden="true"></i> <a href="http://www.ginfoundry.com/cocktail/martini-cocktail/">Gin Stirred Twist</a></div>
             </div>
             <div><img className="logo-lower button-hover" src={logo}/></div>
             </div>
+            <div className="copy">© Andrew Mundy 1988</div>
         </div>
       </div>
     </div>

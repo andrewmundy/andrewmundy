@@ -37,6 +37,7 @@ $margin: 0rem 5rem;
 
 a {
   text-decoration: none;
+  color:white;
 }
 body{
   font-family:$font-main;
@@ -78,6 +79,12 @@ body{
   z-index: 1;
   background:white;
 }
+.footing{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap-reverse;
+}
 .main{
   margin:5rem 0rem;
 }
@@ -87,7 +94,9 @@ body{
   width:100px;
   height: 100px;
 }
-
+.projects{
+  color: $main-blue;
+}
 .logo{
   width: 3.5rem;
   padding:1rem;
@@ -131,6 +140,10 @@ body{
   line-height: 2rem;
   font-size: 1.3rem;
   text-align: left;
+}
+.copy{
+  margin-top: 2rem;
+  color:rgba(255,255,255,0.5);
 }
 
 .project-tile{
@@ -217,4 +230,68 @@ body{
 
 .button-hover:hover, .button-hover:focus, .button-hover:active {
   transform: translateY(3px);
+}
+
+/* ------ iPhone 5 ------ */
+@media only screen
+  and (min-device-width: 100px)
+  and (max-device-width: 1024px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    .heading{
+      margin:0;
+    }
+    .logo{
+      width: 2.5;
+    }
+    .social *{
+      font-size: 2rem;
+      margin:0.5rem;
+    }
+    .splash h1{
+      font-size: 4rem;
+      margin-top:-1rem;
+      margin-bottom:5rem;
+    }
+    .icons *{
+      padding:1rem;
+      width:10rem;
+      height: 10rem;
+    }
+    .project-tile{
+      width:18rem;
+      height: 18rem;
+    }
+    .project-tile p.title {
+      font-size: 2rem;
+    }
+    .project-tile .description {
+      font-size: 1rem;
+    }
+    .logo-lower{
+      margin:0rem;
+      width:15rem;
+    }
+    .copy{
+      margin: 2rem;
+    }
+}
+
+/* ----------- Small Monitor ----------- */
+@media screen
+  and (min-device-width: 1024px)
+  and (max-device-width: 1600px)
+  and (-webkit-min-device-pixel-ratio: 1) {
+    .splash h1{
+      font-size: 8rem;
+      margin: 1rem 4rem 10rem;
+    }
+}
+
+/* ----------- Large Monitor ----------- */
+@media screen
+  and (min-device-width: 1200px)
+  and (max-device-width: 1600px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (min-resolution: 192dpi) {
 }
