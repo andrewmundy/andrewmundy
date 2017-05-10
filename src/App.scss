@@ -1,7 +1,7 @@
 $main-gradient: linear-gradient(135deg, #00d8ff 0%, #7db9e8 100%);
 $alt-gradient: linear-gradient(200deg, #84fab0 0%, #8fd3f4 100%);
-$body-gradient: linear-gradient(100deg, #ddd6f3, #faaca8);
-$alt-body-gradient: linear-gradient(120deg, #fa5b42, #ffb88c);
+$alt-body-gradient: linear-gradient(100deg, #ddd6f3, #faaca8);
+$body-gradient: linear-gradient(120deg, #fa5b42, #ffb88c);
 $font-main: -apple-system, BlinkMacSystemFont, sans-serif;
 $font-serif: Georgia, serif;
 $light-grey: #f8f8f8;
@@ -72,6 +72,38 @@ body{
   flex-wrap: wrap;
 }
 
+.info{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap:wrap;
+  margin:4rem 0;
+  background:$alt-body-gradient;
+  border-radius: 0.5rem;
+  padding:2rem;
+}
+.what{
+  font-size: 3rem;
+  margin-bottom: -3rem;
+  color:white;
+  padding:1rem;
+}
+.info-text{
+  padding:2rem;
+  font-size: 1.2rem;
+  margin: 0 6rem;
+  text-align: center;
+  max-width: 20rem;
+  color:white;
+}
+.info-text h2{
+  color:white;
+}
+.content{
+  margin: auto;
+  padding:0 3rem;
+  max-width: 90%;
+}
 .header{
   display:flex;
   justify-content: space-around;
@@ -116,7 +148,7 @@ body{
 
 .splash h1{
   color:white;
-  font-size: 8rem;
+  font-size: 5rem;
   padding:1rem;
   margin:-1rem 10rem 12rem;
 }
@@ -150,22 +182,24 @@ body{
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  width: 33rem;
-  height: 33rem;
+  width: 20rem;
+  height: 20rem;
   background-size: cover;
   color:white;
   margin: 2rem;
+  border-radius: 0.2rem;
+  box-shadow: -10px 10px 0px rgba(255,255,255,0.5);
 }
 .project-tile p.title{
   margin-bottom: 0px;
-  font-size: 4rem;
+  font-size: 3rem;
   text-align: center;
   background:$title-gradient;
   padding:0.5rem;
 }
 
 .project-tile .description{
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 100;
   font-style: italic;
 }
@@ -187,7 +221,7 @@ body{
 .slant-div-lower{
   background: white;
   height: 15rem;
-  margin: 4rem 0rem 0rem 0rem;
+  margin: 0rem 0rem 0rem 0rem;
   width: 110%;
   transform: skew(-2deg, 4deg);
   position: absolute;
@@ -211,12 +245,30 @@ body{
   margin:0rem 0rem 5rem;
 }
 .icons *{
-  width: 20rem;
-  height: 20rem;
-  padding:5rem;
+  width: 15rem;
+  height: 15rem;
+  padding:0 5rem;
 }
-/* KEYFRAMES
-*********/
+/* ------ KEYFRAMES --------- */
+@keyframes hvr-bob {
+    0% {
+        transform: translateY(-8px) skew(-2deg, 2deg);
+    }
+    50% {
+        transform: translateY(-4px) skew(-2deg, 2deg);
+    }
+    100% {
+        transform: skew(-2deg, 2deg) translateY(-8px);
+    }
+}
+
+.hvr-bob {
+    animation:hvr-bob;
+    animation-duration: 5s;
+    animation-delay: .3s;
+    animation-timing-function: ease-out, ease-in-out;
+    animation-iteration-count: infinite;
+}
 
 .button-hover {
   cursor: pointer;
@@ -231,6 +283,8 @@ body{
 .button-hover:hover, .button-hover:focus, .button-hover:active {
   transform: translateY(3px);
 }
+
+
 
 /* ------ iPhone 5 ------ */
 @media only screen
@@ -275,23 +329,83 @@ body{
     .copy{
       margin: 2rem;
     }
+    .info-text{
+      max-width: 30rem;
+      font-size: 1rem;
+      padding:0.5rem;
+      margin: 0.5rem;
+    }
+    .info{
+      padding:0rem;
+      width: 100%;
+      border-radius: 0rem;
+    }
+    .content{
+      width: 100%;
+      padding:0rem;
+    }
 }
 
 /* ----------- Small Monitor ----------- */
 @media screen
   and (min-device-width: 1024px)
-  and (max-device-width: 1600px)
+  and (max-device-width: 1300px)
   and (-webkit-min-device-pixel-ratio: 1) {
+    .logo{
+      width: 2.5;
+    }
+    .social *{
+      font-size: 2rem;
+      margin:0.5rem;
+    }
     .splash h1{
-      font-size: 8rem;
-      margin: 1rem 4rem 10rem;
+      font-size: 4rem;
+      margin-top:-1rem;
+      margin-bottom:5rem;
+    }
+    .icons *{
+      padding:1rem;
+      width:10rem;
+      height: 10rem;
+    }
+    .project-tile{
+      width:18rem;
+      height: 18rem;
+    }
+    .project-tile p.title {
+      font-size: 2rem;
+    }
+    .project-tile .description {
+      font-size: 1rem;
+    }
+    .logo-lower{
+      margin:0rem;
+      width:15rem;
+    }
+    .copy{
+      margin: 2rem;
+    }
+    .info-text{
+      max-width: 18rem;
+      font-size: 1.2rem;
+    }
+    .content{
+      width: 1000px;
     }
 }
 
 /* ----------- Large Monitor ----------- */
 @media screen
-  and (min-device-width: 1200px)
-  and (max-device-width: 1600px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (min-resolution: 192dpi) {
+  and (min-device-width: 1300px){
+    .content{
+      width: 1200px;
+    }
+    .slant-div-lower{
+      margin:0rem 0;
+      transform:skew(-2deg, 2deg);
+    }
+    .heading{
+      width:1200px;
+      margin: auto;
+    }
 }

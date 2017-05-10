@@ -83,11 +83,11 @@ const BasicExample = () => (
         </div>
       </div>
       <div className="splash flex-center">
-          <h1>
+          <h1 className="">
             Hi I'm Andrew Mundy
           </h1>
       </div>
-      <div className="slant-div"/>
+      <div className="slant-div hvr-bob"/>
       {/* PROJECTS */}
         <div className="contents-container">
           {/* ICONS */}
@@ -95,32 +95,58 @@ const BasicExample = () => (
             <img src={dev}/>
             <img src={design}/>
           </div>
-          <div className="projects"><h1>Projects</h1></div>
-          <div className="projects flex-center">
 
+          <div className="content">
+            <h2 className="info what">What I've been up to.</h2>
             {/* CAMS */}
-              <a href="http://cams-ucsf.herokuapp.com/">
-                <div className="project-tile button-hover" style={camsBack}>
-                  <div>
-                    <p className="title">CAMS
-                      <div className="description">React Mental Health Communication Platform</div>
-                    </p>
-                  </div>
-                </div>
-              </a>
-
-              {/* BARTINDRE */}
-                <a href="https://bartindre.herokuapp.com/">
-                  <div className="project-tile button-hover" style={barBack}>
+            <div className="info">
+              <div>
+                <a href="http://cams-ucsf.herokuapp.com/">
+                  <div className="project-tile button-hover" style={camsBack}>
                     <div>
-                      <p className="title">BARTINDRE
-                        <div className="description">Flask Cocktail Recipie Platform</div>
+                      <p className="title">CAMS
+                        <div className="description">React Mental Health Communication Platform</div>
                       </p>
                     </div>
                   </div>
                 </a>
+              </div>
+              <div className="info-text">
+                <h2>UCSF CAMS</h2>
+                <p>While working for UCSF I was responsable for developing tools to reach users of all devices. My team built CAMS from the ground up to help doctors diagnose mental illness in incoming patients.  CAMS makes the assessment process asynchronous and allows doctors to view patients on their own time.
+                  <p>React | Python</p>
+                </p>
+              </div>
+            </div>
 
-                {/* CAMS */}
+              {/* BARTINDRE */}
+              <div className="info">
+                <div className="info-text">
+                  <h2>Bartindre</h2>
+                  <p>Social network for creating, sharing, rating and saving cocktail recipes in an engaging and playful way.</p>
+                  <p>Python | Flask | Jinja2 | PostgreSQL</p>
+                </div>
+                <div>
+                  <a href="https://bartindre.herokuapp.com/">
+                    <div className="project-tile button-hover" style={barBack}>
+                      <div>
+                        <p className="title">BARTINDRE
+                          <div className="description">Flask Cocktail Recipie Platform</div>
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+              {/* SLOW */}
+              <div className="info">
+                <div className="info-text">
+                  <h2>SLOW CRM</h2>
+                  <p>This CRM was built for Slow Ventures, a venture capital firm run by ex Facebook Executives. I worked as part of a 4 person team and implemented many Front and Back-End features.</p>
+                   <p>Javascript | JQuery | Python | Flask</p>
+                </div>
+                <div>
                   <a href="http://slowcrmv2.herokuapp.com/">
                     <div className="project-tile button-hover" style={slowBack}>
                       <div>
@@ -130,6 +156,8 @@ const BasicExample = () => (
                       </div>
                     </div>
                   </a>
+                </div>
+              </div>
           </div>
           <Switch>
             <Route exact path="/" component={Home} />
