@@ -8,17 +8,21 @@
             <!-- <stop offset="-50%"   stop-color="#fa5b42"/>
             <stop offset="150%" stop-color="#fa7f42"/> -->
         </linearGradient>
+
         <style>
             .cls-1,
             .cls-18,
             .cls-27,
             .cls-3 {
-                fill: url(#linear);
+                fill: white;
+                stroke:white;
+
+
             }
 
             .cls-2 {
                 fill: none;
-                stroke: url(#linear);
+                stroke: white;
                 stroke-linecap: round;
                 stroke-miterlimit: 10;
                 stroke-width: 30px;

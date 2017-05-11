@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {Component} from 'react';
 import {
   BrowserRouter as Router,
   Route,
@@ -13,158 +13,141 @@ import slow from '../images/slow.png';
 import dev from '../images/Dev.svg';
 import design from '../images/Design.svg';
 import cams from './cams';
+import trop1 from '../images/trop1.jpg';
+import trop2 from '../images/trop2.jpg';
+import trop3 from '../images/trop3.jpg';
+import trop4 from '../images/trop4.jpg';
+import avatar from '../images/avatar.PNG';
 
-var camsBack = {
-  backgroundImage: `url(${camsImg})`,
-};
-var barBack = {
-  backgroundImage: `url(${bartindre})`,
-};
-var slowBack = {
-  backgroundImage: `url(${slow})`,
-};
+class MainContent extends Component {
 
-var randomColor = {
-    body: {backgroundColor:'green',}
-};
+  render(){
+    let camsBack = {
+      backgroundImage: `url(${camsImg})`,
+    };
 
-const Home = () => (
-  <div>
-  </div>
-)
+    let barBack = {
+      backgroundImage: `url(${bartindre})`,
+    };
 
-const Topic = ({ match }) => (
-  <div>
-    <h3>{match.params.topicId}</h3>
-  </div>
-)
+    let slowBack = {
+      backgroundImage: `url(${slow})`,
+    };
+    let back1 = {backgroundImage:`linear-gradient(200deg, #84fab0 0%,#8fd3f4 100%)`,};
+    let back2 = {backgroundImage:`linear-gradient(120deg, #fa5b42, #ffb88c)`,};
+    let back3 = {backgroundImage:`linear-gradient(100deg, #ddd6f3, #faaca8)`,};
+    let back4 = {backgroundImage:`linear-gradient(135deg, #00d8ff 0%, #7db9e8 100%)`,};
+    let back5 = {backgroundImage:`url(${trop1}) no-repeat center center fixed`,};
+    let back6 = {backgroundImage:`url(${trop2}) no-repeat center center fixed`,};
+    let back7 = {backgroundImage:`url(${trop3}) no-repeat center center fixed`,};
+    let back8 = {backgroundImage:`url(${trop4}) no-repeat center center fixed`,};
+    let bgRand = [back1,back2,back3,back4,back5];
 
-// const Cams = ({ match }) => (
-//
-//   <div className="contents">
-//     <h2>CAMS</h2>
-//     <h4><i>Computerized Assement of Mental Status</i></h4>
-//     <ul>
-//       <li>
-//         <Link to={`${match.url}/rendering`}>
-//           Rendering with React
-//         </Link>
-//       </li>
-//       <li>
-//         <Link to={`${match.url}/components`}>
-//           Components
-//         </Link>
-//       </li>
-//       <li>
-//         <Link to={`${match.url}/props-v-state`}>
-//           Props v. State
-//         </Link>
-//       </li>
-//     </ul>
-//
-//     <Route path={`${match.url}/:topicId`} component={Topic}/>
-//     <Route exact path={match.url} render={() => (
-//       <h3>Please select a topic.</h3>
-//     )}/>
-//   </div>
-// )
+    let bg = bgRand[Math.floor(Math.random()*5)];
 
-const BasicExample = () => (
-  <Router>
-    <div className="containment">
+    return(
+    <div className="fakebody" style={bg}>
+      <div className="containment" >
 
-      <div className="heading">
-        <Link to="/" >
-          <img className="logo button-hover" src={logo}/>
-        </Link>
-        <div className="social">
-          <a href="https://github.com/andrewmundy"><i className="fa fa-github button-hover" aria-hidden="true"></i></a>
-          <a href="https://www.linkedin.com/in/andrew-mundy/"><i className="fa fa-linkedin-square button-hover" aria-hidden="true"></i></a>
+        <div className="heading">
+          <Link to="/" >
+            <img className="logo button-hover" src={logo}/>
+            <div className="pointer hvr-bob">☝️</div>
+          </Link>
+          <div className="social">
+            <a href="https://github.com/andrewmundy"><i className="fa fa-github button-hover" aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/in/andrew-mundy/"><i className="fa fa-linkedin-square button-hover" aria-hidden="true"></i></a>
+          </div>
         </div>
-      </div>
-      <div className="splash flex-center">
-          <h1 className="">
-            Hi I'm Andrew Mundy
-          </h1>
-      </div>
-      <div className="slant-div hvr-bob"/>
-      {/* PROJECTS */}
-        <div className="contents-container">
-          {/* ICONS */}
-          <div className="flex-center icons">
-            <img src={dev}/>
-            <img src={design}/>
-          </div>
+        <div className="splash flex-center">
+            <h1 className="">
+              Hi I'm Andrew Mundy
+            </h1>
 
-          <div className="content">
-            <h2 className="info what">What I've been up to.</h2>
-            {/* CAMS */}
-            <div className="info">
-              <div>
-                <a href="http://cams-ucsf.herokuapp.com/">
-                  <div className="project-tile button-hover" style={camsBack}>
-                    <div>
-                      <p className="title">CAMS
-                        <div className="description">React Mental Health Communication Platform</div>
-                      </p>
+            <img className="avatar" src={avatar}/>
+
+            <p>Full-Stack software engineer with an emphasis on engaging design and friendly UX/UI</p>
+        </div>
+        {/* ICONS */}
+        {/* <div className="flex-center icons">
+          <img src={dev}/>
+          <img src={design}/>
+        </div> */}
+
+        {/* BODY */}
+          <div className="contents-container">
+
+            <div className="content">
+              <h2 className="what">Development Projects</h2>
+              {/* PROJECTS */}
+
+              {/* CAMS */}
+              <div className="info">
+                <div>
+                  <a href="http://cams-ucsf.herokuapp.com/">
+                    <div className="project-tile button-hover" style={camsBack}>
+                      <div>
+                        <p className="title">CAMS
+                          <div className="description">React Mental Health Communication Platform</div>
+                        </p>
+                      </div>
                     </div>
+                  </a>
+                </div>
+                <div className="info-text">
+                  <h2>UCSF CAMS</h2>
+                  <p>While working for UCSF I was responsable for developing tools to reach users of all devices. My team built CAMS from the ground up to help doctors diagnose mental illness in incoming patients.  CAMS makes the assessment process asynchronous and allows doctors to view patients on their own time.
+                    <p>React | Python</p>
+                  </p>
+                </div>
+              </div>
+
+                {/* BARTINDRE */}
+                <div className="info">
+                  <div className="info-text">
+                    <h2>Bartindre</h2>
+                    <p>Social network for creating, sharing, rating and saving cocktail recipes in an engaging and playful way.</p>
+                    <p>Python | Flask | Jinja2 | PostgreSQL</p>
                   </div>
-                </a>
-              </div>
-              <div className="info-text">
-                <h2>UCSF CAMS</h2>
-                <p>While working for UCSF I was responsable for developing tools to reach users of all devices. My team built CAMS from the ground up to help doctors diagnose mental illness in incoming patients.  CAMS makes the assessment process asynchronous and allows doctors to view patients on their own time.
-                  <p>React | Python</p>
-                </p>
-              </div>
+                  <div>
+                    <a href="https://bartindre.herokuapp.com/">
+                      <div className="project-tile button-hover" style={barBack}>
+                        <div>
+                          <p className="title">BARTINDRE
+                            <div className="description">Flask Cocktail Recipie Platform</div>
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+
+                {/* SLOW */}
+                <div className="info">
+                  <div>
+                    <a href="http://slowcrmv2.herokuapp.com/">
+                      <div className="project-tile button-hover" style={slowBack}>
+                        <div>
+                          <p className="title">SLOW
+                            <div className="description">Flask Customer Relationship Manager</div>
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div className="info-text">
+                    <h2>SLOW CRM</h2>
+                    <p>This CRM was built for Slow Ventures, a venture capital firm run by ex Facebook Executives. I worked as part of a 4 person team and implemented many Front and Back-End features.</p>
+                    <p>Javascript | JQuery | Python | Flask</p>
+                  </div>
+                </div>
             </div>
-
-              {/* BARTINDRE */}
-              <div className="info">
-                <div className="info-text">
-                  <h2>Bartindre</h2>
-                  <p>Social network for creating, sharing, rating and saving cocktail recipes in an engaging and playful way.</p>
-                  <p>Python | Flask | Jinja2 | PostgreSQL</p>
-                </div>
-                <div>
-                  <a href="https://bartindre.herokuapp.com/">
-                    <div className="project-tile button-hover" style={barBack}>
-                      <div>
-                        <p className="title">BARTINDRE
-                          <div className="description">Flask Cocktail Recipie Platform</div>
-                        </p>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-              </div>
-
-              {/* SLOW */}
-              <div className="info">
-                <div className="info-text">
-                  <h2>SLOW CRM</h2>
-                  <p>This CRM was built for Slow Ventures, a venture capital firm run by ex Facebook Executives. I worked as part of a 4 person team and implemented many Front and Back-End features.</p>
-                   <p>Javascript | JQuery | Python | Flask</p>
-                </div>
-                <div>
-                  <a href="http://slowcrmv2.herokuapp.com/">
-                    <div className="project-tile button-hover" style={slowBack}>
-                      <div>
-                        <p className="title">SLOW
-                          <div className="description">Flask Customer Relationship Manager</div>
-                        </p>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-              </div>
-          </div>
-          <Switch>
-            <Route exact path="/" component={Home} />
-            <Route path="/cams" component={cams}/>
-          </Switch>
-          {/* FOOTER */}
-      <div className="slant-div-lower"/>
+            <Switch>
+              {/* <Route exact path="/" component={Home} /> */}
+              {/* <Route path="/cams" component={cams}/> */}
+            </Switch>
+        </div>
+        {/* FOOTER */}
         <div className="footer">
           <div className="footing">
             <div className="contact">
@@ -176,11 +159,12 @@ const BasicExample = () => (
               <div><i className="fa fa-glass" aria-hidden="true"></i> <a href="http://www.ginfoundry.com/cocktail/martini-cocktail/">Gin Stirred Twist</a></div>
             </div>
             <div><img className="logo-lower button-hover" src={logo}/></div>
-            </div>
-            <div className="copy">© Andrew Mundy 1988</div>
+          </div>
+          <div className="copy">© Andrew Mundy 1988</div>
         </div>
       </div>
     </div>
-  </Router>
 )
-export default BasicExample
+}
+}
+export default MainContent;
