@@ -93,8 +93,7 @@ body {
     font-size: 1.2rem;
     text-align: center;
     max-width: 20rem;
-    color: rgba(0, 0, 0, 0.81);
-    // text-shadow: -1px 1px 1px rgba(0,0,0,0.4);
+    color: rgba(0, 0, 0, 0.62);
 }
 
 .content {
@@ -168,9 +167,8 @@ body {
 .heading {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     padding: 1rem;
-    margin: $margin;
 }
 
 .footer {
@@ -376,7 +374,7 @@ body {
     }
 
     .what{
-      padding: 0 2rem;
+      padding: 3rem 2rem 0;
       margin: 0;
       font-size:2.5rem;
     }

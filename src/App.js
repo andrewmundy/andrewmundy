@@ -50,7 +50,7 @@ class MainContent extends Component {
       <div className="containment" >
 
         <div className="heading">
-          <Link to="/" >
+          <Link to="/">
             <img className="logo button-hover" src={logo}/>
             <div className="pointer hvr-bob">☝️</div>
           </Link>
@@ -61,7 +61,7 @@ class MainContent extends Component {
         </div>
         <div className="splash flex-center">
             <h1 className="">
-              Hi I'm Andrew Mundy
+              Hi I'm Andrew Mundy 
             </h1>
 
             <img className="avatar" src={avatar}/>
