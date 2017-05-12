@@ -21,6 +21,9 @@ $margin: 0 5rem;
 $lg-width: 60%;
 $md-width: 80%;
 $sm-width: 100%;
+$title-lg:-10px 10px 0 rgba(255,255,255,0.4), -20px 20px 0 rgba(255,255,255,0.4);
+$title-md-shadow:-2px 2px 0 rgba(255, 255, 255, 0.55), -4px 4px 10px rgba(0, 0, 0, 0.08);
+$splash-title: -3px 3px 0 rgba(255,255,255,0.4), -6px 6px 0 rgba(255,255,255,0.4);
 
 a {
     text-decoration: none;
@@ -32,6 +35,24 @@ body {
     background: $main-gradient;
     margin: 0;
 }
+p {
+  break-after: always;
+  page-break-after: always;
+  word-wrap: break-word;
+  word-break: break-word;
+}
+.dev{
+  background:rgba(0, 0, 0, 0.02);
+}
+
+.point{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 4rem;
+}
+
 .fakebody{
   width: 100%;
   background-size:cover;
@@ -39,8 +60,14 @@ body {
 
 .pointer{
   padding:0 1.5rem 0;
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   text-shadow: 0px 3px 3px rgba(0,0,0,0.3);
+}
+.pointer h6{
+  margin: 0;
+  font-weight: 100;
+  font-size:0.5rem;
+  text-align: center;
 }
 
 .flex-space-around {
@@ -74,32 +101,34 @@ body {
 .info {
     display: flex;
     justify-content: space-around;
-    align-items: flex-start;
+    align-items: center;
     flex-wrap: wrap;
-    margin: 3rem 0;
-    background: rgba(255,255,255,0.5);
     border-radius: 0.1rem;
+    background: rgba(255, 255, 255, 0.1);
+    margin: 1rem;
 }
 
 .what {
     font-size: 3rem;
-    margin-bottom: -3rem;
+    margin: 0;
     color: white;
     padding: 2rem 0;
-    text-shadow: -2px 2px 0 rgba(255,255,255,0.5);
+    text-align: left;
+    text-shadow:$title-md-shadow;
 }
 
 .info-text {
     font-size: 1.2rem;
-    text-align: center;
+    text-align: left;
     max-width: 20rem;
-    color: rgba(0, 0, 0, 0.62);
+    color: white;
+    text-shadow: -1px 1px 1px rgba(0, 0, 0, 0.08);
 }
 
 .content {
-    margin: auto;
-    padding: 0 3rem;
     max-width: 90%;
+    margin: 0 0 2rem;
+    padding: 0rem 5rem 3rem;
 }
 
 .header {
@@ -153,15 +182,18 @@ body {
     font-size: 5rem;
     padding: 1rem;
     z-index: 2;
-    text-shadow: -3px 3px 0 rgba(255,255,255,0.4), -6px 6px 0 rgba(255,255,255,0.4);
+    text-shadow:$splash-title;
+}
+.splash{
+  padding:10rem 0rem 5rem;
 }
 
 .avatar{
   width: 15rem;
-  position:absolute;
+  position: absolute;
   z-index: 0;
-  margin-top: -5rem;
-  border-radius: 20rem;
+  margin-top: -6rem;
+  border-radius: 20rem
 }
 
 .heading {
@@ -191,6 +223,11 @@ body {
   font-size: 2rem;
   font-weight: 100;
   font-style: italic;
+  text-align: center;
+  max-width: 50%;
+  background: rgba(0, 0, 0, 0.02);
+  padding: 1rem;
+  border-radius: 0.2rem;
 }
 .project-tile {
     display: flex;
@@ -202,7 +239,9 @@ body {
     color: white;
     margin: 2rem 0;
     border-radius: 0.3rem;
-    box-shadow: -10px 10px 0 rgba(255,255,255,0.4), -20px 20px 0 rgba(255,255,255,0.4);
+    outline: solid rgba(255, 255, 255, 0.2) 1px;
+    box-shadow: $title-lg;
+
 }
 
 .project-tile p.title {
@@ -261,11 +300,21 @@ body {
     margin: auto;
     position: relative;
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 
-.icons * {
-    width: 5rem;
-    padding: 1rem 5rem;
+.icon {
+    width: 10rem;
+    margin: 10rem 0 2rem;
+    padding: 0rem 5rem;
+}
+
+div.icons > div > p{
+  text-align: center;
+  color:rgba(#ffffff, 0.8);
+  margin:0;
+  font-weight: 100;
+  font-size: 2rem;
 }
 /* ------ KEYFRAMES --------- */
 @keyframes hvr-bob {
@@ -306,7 +355,7 @@ body {
     transform: translateY(3px);
 }
 /* ------ Mobile ------ */
-@media only screen and (min-device-width: 100px) and (max-device-width: 1024px) {
+@media (min-device-width: 100px) and (max-device-width: 800px) {
     .heading {
         margin: 0;
     }
@@ -320,18 +369,19 @@ body {
     }
 
     .social * {
-        font-size: 3.5rem;
-        margin: 0.5rem;
+        font-size: 2rem;
+        margin: 1.5rem 0.5rem;
     }
 
     .splash h1 {
         font-size: 4rem;
-        margin-bottom:2rem;
+        margin:0 0 3rem;
     }
 
     .project-tile {
         width: 18rem;
         height: 18rem;
+        padding: 0px;
     }
 
     .project-tile p.title {
@@ -344,6 +394,7 @@ body {
 
     .logo-lower {
         margin: 0;
+        padding:0 0 2rem;
         width: 15rem;
     }
 
@@ -358,6 +409,9 @@ body {
         padding: 0.5rem;
         margin: 0.5rem;
     }
+    .splash{
+      padding:0rem 0rem 3rem;
+    }
 
     .info {
         padding: 0;
@@ -369,7 +423,7 @@ body {
     }
 
     .containment {
-        width: $sm-width;
+        width: 100%;
         overflow-x: hidden;
     }
 
@@ -389,7 +443,7 @@ body {
     }
 
     .project-tile {
-        box-shadow: 0 5px 0 rgba(255,255,255,0.8);
+        box-shadow: 0 5px 0 rgba(255,255,255,0.3), 0 10px 0 rgba(255,255,255,0.2), 0 15px 0 rgba(255,255,255,0.2);
     }
 
     .contact{
@@ -397,7 +451,8 @@ body {
     }
 
     .avatar{
-      margin: 10rem 0;
+      margin: 1rem 0;
+      position: static;
     }
     .splash p{
       position: relative;
@@ -408,9 +463,12 @@ body {
     .splash{
       margin-bottom: 3rem;
     }
+    .icon{
+      margin: 0;
+    }
 }
 /* ----------- Small Monitor ----------- */
-@media screen and (min-device-width: 1024px) and (max-device-width: 1300px) and (-webkit-min-device-pixel-ratio: 1) {
+@media (min-device-width: 800px) and (max-device-width: 1300px){
     .logo {
         width: 2.5;
     }
@@ -422,6 +480,10 @@ body {
 
     .splash h1 {
         font-size: 4rem;
+    }
+
+    div.splash{
+      padding:1rem;
     }
 
     .project-tile {
@@ -457,7 +519,7 @@ body {
     }
 }
 /* ----------- Large Monitor ----------- */
-@media screen and (min-device-width: 1300px) {
+@media (min-device-width: 1300px) {
     .containment {
         width: $lg-width;
         overflow-x: hidden;
