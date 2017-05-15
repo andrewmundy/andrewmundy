@@ -186,7 +186,7 @@ class MainContent extends Component {
                                 </p>
                               </div>
                                 <div>
-                                    <a href="http://cams-ucsf.herokuapp.com/">
+                                    <a href="http://pokequotes.com/">
                                         <div className="project-tile button-hover" style={pokeBack}>
                                             <div>
                                                 <p className="title">PokeQuotes
