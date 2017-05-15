@@ -179,6 +179,12 @@ class MainContent extends Component {
                             </div>
                             {/* POKEQUOTES */}
                             <div className="info">
+                              <div className="info-text">
+                                <h2>PokéQuotes</h2>
+                                <p>Fun, engaging, and endlessly inspirational  Pokémon quote generator to spark a user's dreams to catch em all by >103%
+                                  <p>JQuery | CSS3</p>
+                                </p>
+                              </div>
                                 <div>
                                     <a href="http://cams-ucsf.herokuapp.com/">
                                         <div className="project-tile button-hover" style={pokeBack}>
@@ -189,12 +195,6 @@ class MainContent extends Component {
                                             </div>
                                         </div>
                                     </a>
-                                </div>
-                                <div className="info-text">
-                                    <h2>PokéQuotes</h2>
-                                    <p>Fun, engaging, and endlessly inspirational  Pokémon quote generator to spark a user's dreams to catch em all by >103%
-                                        <p>JQuery | CSS3</p>
-                                    </p>
                                 </div>
                             </div>
                         </div>
