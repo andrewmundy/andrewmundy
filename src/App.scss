@@ -21,8 +21,8 @@ $margin: 0 5rem;
 $lg-width: 60%;
 $md-width: 80%;
 $sm-width: 100%;
-$title-lg:-10px 10px 0 rgba(255,255,255,0.4), -20px 20px 0 rgba(255,255,255,0.4);
-$title-md-shadow:-2px 2px 0 rgba(255, 255, 255, 0.55), -4px 4px 10px rgba(0, 0, 0, 0.08);
+$title-lg: -10px 10px 0 rgba(255,255,255,0.4), -20px 20px 0 rgba(255,255,255,0.4);
+$title-md-shadow: -2px 2px 0 rgba(255, 255, 255, 0.55), -4px 4px 10px rgba(0, 0, 0, 0.08);
 $splash-title: -3px 3px 0 rgba(255,255,255,0.4), -6px 6px 0 rgba(255,255,255,0.4);
 
 a {
@@ -35,39 +35,66 @@ body {
     background: $main-gradient;
     margin: 0;
 }
+
 p {
-  break-after: always;
-  page-break-after: always;
-  word-wrap: break-word;
-  word-break: break-word;
-}
-.dev{
-  background:rgba(0, 0, 0, 0.02);
+    break-after: always;
+    page-break-after: always;
+    word-wrap: break-word;
+    word-break: break-word;
 }
 
-.point{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  width: 4rem;
+.quote {
+    text-align: center;
+    padding: 0 0 5rem;
 }
 
-.fakebody{
-  width: 100%;
-  background-size:cover;
+.line {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 2rem;
+    font-weight: 100;
+    font-style: italic;
+    text-align: center;
+    max-width: 80%;
+    padding: 1rem;
+    border-radius: 0.2rem;
+    margin: -7rem auto;
 }
 
-.pointer{
-  padding:0 1.5rem 0;
-  font-size: 2.5rem;
-  text-shadow: 0px 3px 3px rgba(0,0,0,0.3);
+.stroke {
+    margin: auto;
+    width: 100%;
+    filter: invert(80%) brightness(160%) opacity(60%);
 }
-.pointer h6{
-  margin: 0;
-  font-weight: 100;
-  font-size:0.5rem;
-  text-align: center;
+
+.dev {
+    background: rgba(0, 0, 0, 0.02);
+}
+
+.point {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 4rem;
+    cursor: pointer;
+}
+
+.fakebody {
+    width: 100%;
+    background-size: cover;
+}
+
+.pointer {
+    padding: 0 1.5rem;
+    font-size: 2.5rem;
+    text-shadow: 0 3px 3px rgba(0,0,0,0.3);
+}
+
+.pointer h6 {
+    margin: 0;
+    font-weight: 100;
+    font-size: 1rem;
+    text-align: center;
 }
 
 .flex-space-around {
@@ -114,7 +141,7 @@ p {
     color: white;
     padding: 2rem 0;
     text-align: left;
-    text-shadow:$title-md-shadow;
+    text-shadow: $title-md-shadow;
 }
 
 .info-text {
@@ -128,7 +155,7 @@ p {
 .content {
     max-width: 90%;
     margin: 0 0 2rem;
-    padding: 0rem 5rem 3rem;
+    padding: 0 5rem 3rem;
 }
 
 .header {
@@ -177,23 +204,24 @@ p {
 }
 
 .splash h1 {
-  position: relative;
+    position: relative;
     color: white;
     font-size: 5rem;
     padding: 1rem;
     z-index: 2;
-    text-shadow:$splash-title;
-}
-.splash{
-  padding:10rem 0rem 5rem;
+    text-shadow: $splash-title;
 }
 
-.avatar{
-  width: 15rem;
-  position: absolute;
-  z-index: 0;
-  margin-top: -6rem;
-  border-radius: 20rem
+.splash {
+    padding: 10rem 0 2rem;
+}
+
+.avatar {
+    width: 15rem;
+    position: absolute;
+    z-index: 0;
+    margin-top: -6rem;
+    border-radius: 20rem;
 }
 
 .heading {
@@ -213,22 +241,11 @@ p {
     font-size: 1.3rem;
     text-align: left;
 }
-
 .copy {
     margin-top: 4rem 0 2rem;
     color: rgba(255,255,255,0.5);
 }
-.splash p{
-  color: rgba(255, 255, 255, 0.8);
-  font-size: 2rem;
-  font-weight: 100;
-  font-style: italic;
-  text-align: center;
-  max-width: 50%;
-  background: rgba(0, 0, 0, 0.02);
-  padding: 1rem;
-  border-radius: 0.2rem;
-}
+
 .project-tile {
     display: flex;
     justify-content: center;
@@ -239,9 +256,7 @@ p {
     color: white;
     margin: 2rem 0;
     border-radius: 0.3rem;
-    outline: solid rgba(255, 255, 255, 0.2) 1px;
     box-shadow: $title-lg;
-
 }
 
 .project-tile p.title {
@@ -306,15 +321,19 @@ p {
 .icon {
     width: 10rem;
     margin: 10rem 0 2rem;
-    padding: 0rem 5rem;
+    padding: 0 5rem;
 }
 
-div.icons > div > p{
-  text-align: center;
-  color:rgba(#ffffff, 0.8);
-  margin:0;
-  font-weight: 100;
-  font-size: 2rem;
+div.icons > div > p {
+    text-align: center;
+    color: rgba(#ffffff, 0.8);
+    margin: 0;
+    font-weight: 100;
+    font-size: 2rem;
+}
+
+.backwards {
+    flex-wrap: wrap-reverse;
 }
 /* ------ KEYFRAMES --------- */
 @keyframes hvr-bob {
@@ -354,14 +373,72 @@ div.icons > div > p{
 .button-hover:hover {
     transform: translateY(3px);
 }
+@keyframes shake {
+  10% {
+    transform: translateX(3px) rotate(2deg);
+  }
+  20% {
+    transform: translateX(-3px) rotate(-2deg);
+  }
+  30% {
+    transform: translateX(3px) rotate(2deg);
+  }
+  40% {
+    transform: translateX(-3px) rotate(-2deg);
+  }
+  50% {
+    transform: translateX(2px) rotate(1deg);
+  }
+  55% {
+    transform: translateX(-2px) rotate(-1deg);
+  }
+  60% {
+    transform: translateX(2px) rotate(1deg);
+  }
+  65% {
+    transform: translateX(-2px) rotate(-1deg);
+  }
+  70% {
+    transform: translateX(1px) rotate(0);
+  }
+  75% {
+    transform: translateX(-1px) rotate(0);
+  }
+  100% {
+    transform: translateX(0) rotate(0);
+  }
+}
+
+.shake {
+  display: inline-block;
+  vertical-align: middle;
+  transform: perspective(2px) translateZ(0);
+  animation: shake 5s infinite;
+}
 /* ------ Mobile ------ */
-@media (min-device-width: 100px) and (max-device-width: 800px) {
+@media (min-device-width: 100px) and (max-device-width: 400px) {
     .heading {
         margin: 0;
     }
 
-    .icons *{
-      padding: 1rem 3rem;
+    .stroke {
+        position: relative;
+        width: 500%;
+        margin-left: -20rem;
+        margin-top: -3rem;
+    }
+
+    .quote {
+        margin: 0 0 5rem;
+    }
+
+    .line {
+        margin-top: -10rem;
+    }
+
+    .icons * *{
+        width: 5rem;
+        padding: 1rem 3rem;
     }
 
     .logo {
@@ -375,13 +452,13 @@ div.icons > div > p{
 
     .splash h1 {
         font-size: 4rem;
-        margin:0 0 3rem;
+        margin: 0 0 3rem;
     }
 
     .project-tile {
         width: 18rem;
         height: 18rem;
-        padding: 0px;
+        padding: 0;
     }
 
     .project-tile p.title {
@@ -393,9 +470,10 @@ div.icons > div > p{
     }
 
     .logo-lower {
-        margin: 0;
-        padding:0 0 2rem;
+        margin: -15rem auto;
+        padding: 15rem 0 2rem;
         width: 15rem;
+        filter: opacity(30%);
     }
 
     .copy {
@@ -403,23 +481,24 @@ div.icons > div > p{
     }
 
     .info-text {
-        display:none;
+        display: none;
         max-width: 30rem;
         font-size: 1rem;
         padding: 0.5rem;
         margin: 0.5rem;
     }
-    .splash{
-      padding:0rem 0rem 3rem;
+
+    .splash {
+        padding: 0 0 3rem;
     }
 
     .info {
         padding: 0;
         width: 100%;
         border-radius: 0;
-        padding:0.5rem 0;
+        padding: 0.5rem 0;
         background: none;
-        margin:0;
+        margin: 0;
     }
 
     .containment {
@@ -427,10 +506,10 @@ div.icons > div > p{
         overflow-x: hidden;
     }
 
-    .what{
-      padding: 3rem 2rem 0;
-      margin: 0;
-      font-size:2.5rem;
+    .what {
+        padding: 3rem 2rem 0;
+        margin: 0;
+        font-size: 2.5rem;
     }
 
     .content {
@@ -438,37 +517,69 @@ div.icons > div > p{
         max-width: 100%;
     }
 
-    .contents-container{
-      padding:0px;
+    .contents-container {
+        padding: 0;
     }
 
     .project-tile {
         box-shadow: 0 5px 0 rgba(255,255,255,0.3), 0 10px 0 rgba(255,255,255,0.2), 0 15px 0 rgba(255,255,255,0.2);
     }
 
-    .contact{
-      font-size: 1rem;
+    .contact {
+        font-size: 1rem;
     }
 
-    .avatar{
-      margin: 1rem 0;
-      position: static;
+    .avatar {
+        margin: 1rem 0;
+        position: static;
     }
-    .splash p{
-      position: relative;
-      z-index: 2;
-      padding:1rem;
-      font-size: 1.5rem;
+
+    .splash p {
+        position: relative;
+        z-index: 2;
+        padding: 1rem;
+        font-size: 1.5rem;
     }
-    .splash{
-      margin-bottom: 3rem;
+
+    .splash {
+        margin-bottom: 3rem;
     }
-    .icon{
-      margin: 0;
+
+    .icon {
+        margin: 0;
+    }
+    .footer{
+      padding: 5rem 0 0;
+    }
+}
+@media (min-device-width: 400px) and (max-device-width: 800px) {
+    .stroke {
+        position: relative;
+        width: 100%;
+        margin-left: 0;
+        margin-top: 0;
+    }
+
+    .info {
+        width: 100%;
+    }
+
+    .info-text {
+        font-size: 0.8rem;
+        padding: 0.5rem;
+        margin: 0.5rem;
+    }
+
+    .content {
+        padding: 0;
+    }
+
+    .containment {
+        width: 90%;
     }
 }
 /* ----------- Small Monitor ----------- */
-@media (min-device-width: 800px) and (max-device-width: 1300px){
+@media (min-device-width: 800px) and (max-device-width: 1300px) {
     .logo {
         width: 2.5;
     }
@@ -482,8 +593,8 @@ div.icons > div > p{
         font-size: 4rem;
     }
 
-    div.splash{
-      padding:1rem;
+    div.splash {
+        padding: 1rem;
     }
 
     .project-tile {
@@ -509,8 +620,8 @@ div.icons > div > p{
     }
 
     .info-text {
-        max-width: 18rem;
-        font-size: 1.2rem;
+        max-width: 15rem;
+        font-size: 1rem;
     }
 
     .containment {
