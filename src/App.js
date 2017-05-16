@@ -258,6 +258,12 @@ class MainContent extends Component {
                               </i>
                           </div>
                         </div>
+                        <a target="_blank" href="https://docs.google.com/document/d/1tDK2jvYCzbqOoROnntApguzjnI8qA8paVPb8CMYPOug/pub">
+                          <div className="resume">
+                            <i className="fa fa-file-text" aria-hidden="true"></i>
+                            <p>I'm looking to join a team! 😎</p>
+                          </div>
+                      </a>
                     </div>
                     {/* FOOTER */}
                     <div className="footer">

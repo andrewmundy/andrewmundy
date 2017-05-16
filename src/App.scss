@@ -43,6 +43,17 @@ p {
     word-wrap: break-word;
     word-break: break-word;
 }
+.resume{
+  padding: 2rem;
+  max-width: 300px;
+  margin: auto;
+  color:white;
+  text-align: center;
+}
+.resume i{
+  font-size: 4rem;
+  box-shadow: $splash-title;
+}
 
 .quote {
     text-align: center;
