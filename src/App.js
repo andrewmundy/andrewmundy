@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import {BrowserRouter as Router, Route, Switch, Redirect, Link} from 'react-router-dom'
 
 import logo from '../images/logo.svg';
-import bartindre from '../images/bartindre.png';
+import bartindre from '../images/bartindre.gif';
 import camsImg from '../images/cams.png';
 import slow from '../images/slow.png';
 import dev from '../images/Dev.svg';
@@ -12,7 +12,7 @@ import avatar from '../images/avatar.PNG';
 import cactus from '../images/cactux.gif';
 import art from '../images/art.gif';
 import stroke from '../images/stroke.svg';
-import poke from '../images/pokequotes.png';
+import poke from '../images/pokequotes.gif';
 
 class MainContent extends Component {
     constructor(props) {
@@ -43,6 +43,7 @@ class MainContent extends Component {
         let slowBack = {
             backgroundImage: `url(${slow})`
         };
+
         let back1 = {
             backgroundImage: `linear-gradient(200deg, #84fab0 0%,#8fd3f4 100%)`
         };
@@ -85,10 +86,10 @@ class MainContent extends Component {
                             </div>
                         </Link>
                         <div className="social">
-                            <a href="https://github.com/andrewmundy">
+                            <a target="_blank" href="https://github.com/andrewmundy">
                                 <i className="fa fa-github button-hover" aria-hidden="true"></i>
                             </a>
-                            <a href="https://www.linkedin.com/in/andrew-mundy/">
+                            <a target="_blank" href="https://www.linkedin.com/in/andrew-mundy/">
                                 <i className="fa fa-linkedin-square button-hover" aria-hidden="true"></i>
                             </a>
                         </div>
@@ -120,7 +121,7 @@ class MainContent extends Component {
                             {/* CAMS */}
                             <div className="info">
                                 <div>
-                                    <a href="http://cams-ucsf.herokuapp.com/">
+                                    <a target="_blank" href="http://cams-ucsf.herokuapp.com/">
                                         <div className="project-tile button-hover" style={camsBack}>
                                             <div>
                                                 <p className="title">CAMS
@@ -132,7 +133,7 @@ class MainContent extends Component {
                                 </div>
                                 <div className="info-text">
                                     <h2>UCSF CAMS</h2>
-                                    <p>While working for UCSF I was responsable for developing tools to reach users of all devices. My team built CAMS from the ground up to help doctors diagnose mental illness in incoming patients. CAMS makes the assessment process asynchronous and allows doctors to view patients on their own time.
+                                    <p>While working for UCSF I was responsible for developing tools to reach users of all devices. My team built CAMS from the ground up to help doctors diagnose mental illness in incoming patients. CAMS makes the assessment process asynchronous and allows doctors to view patients on their own time.
                                         <p>React | Python</p>
                                     </p>
                                 </div>
@@ -146,11 +147,11 @@ class MainContent extends Component {
                                     <p>Python | Flask | Jinja2 | PostgreSQL</p>
                                 </div>
                                 <div>
-                                    <a href="https://bartindre.herokuapp.com/">
+                                    <a target="_blank" href="https://bartindre.herokuapp.com/">
                                         <div className="project-tile button-hover" style={barBack}>
                                             <div>
                                                 <p className="title">BARTINDRE
-                                                    <div className="description">Flask Cocktail Recipie Platform</div>
+                                                    <div className="description">Flask Cocktail Recipe Platform</div>
                                                 </p>
                                             </div>
                                         </div>
@@ -161,7 +162,7 @@ class MainContent extends Component {
                             {/* SLOW */}
                             <div className="info">
                                 <div>
-                                    <a href="http://slowcrmv2.herokuapp.com/">
+                                    <a target="_blank" href="http://slowcrmv2.herokuapp.com/">
                                         <div className="project-tile button-hover" style={slowBack}>
                                             <div>
                                                 <p className="title">SLOW
@@ -178,7 +179,7 @@ class MainContent extends Component {
                                 </div>
                             </div>
                             {/* POKEQUOTES */}
-                            <div className="info">
+                            <div className="info backwards">
                               <div className="info-text">
                                 <h2>PokéQuotes</h2>
                                 <p>Fun, engaging, and endlessly inspirational  Pokémon quote generator to spark a user's dreams to catch em all by >103%
@@ -186,11 +187,11 @@ class MainContent extends Component {
                                 </p>
                               </div>
                                 <div>
-                                    <a href="http://pokequotes.com/">
+                                    <a target="_blank" href="http://pokequotes.com/">
                                         <div className="project-tile button-hover" style={pokeBack}>
                                             <div>
                                                 <p className="title">PokeQuotes
-                                                    <div className="description">"Pika pi!" - Brock</div>
+                                                    <div className="description">"Pika pi!" - Squirtle 🌊🐢</div>
                                                 </p>
                                             </div>
                                         </div>
@@ -219,13 +220,13 @@ class MainContent extends Component {
                                 {/* CACTUS */}
                                 <div className="info">
                                     <div className="transparent project-outline">
-                                        <a href="https://www.behance.net/gallery/43147761/Nopal-en-Movimiento">
+                                        <a target="_blank" href="https://www.behance.net/gallery/43147761/Nopal-en-Movimiento">
                                             <div className="project-tile button-hover" style={cactusBack}></div>
                                         </a>
                                     </div>
                                     <div className="info-text">
                                         <h2>Nopal en Movimiento</h2>
-                                        <p>Commisioned work that involved designing and animating several cactus characters for use in a unity project.
+                                        <p>Commissioned work that involved designing and animating several cactus characters for use in a unity project.
                                             <p>Illustrator | Photoshop</p>
                                         </p>
                                     </div>
@@ -239,12 +240,23 @@ class MainContent extends Component {
                                         <p>Adobe Illustrator | Adobe Photoshop | Acrylic | Watercolor | Pen & Ink</p>
                                     </div>
                                     <div>
-                                        <a href="https://www.behance.net/gallery/52667453/Various-Illustration-Project-Assets">
+                                        <a target="_blank" href="https://www.behance.net/gallery/52667453/Various-Illustration-Project-Assets">
                                             <div className="project-tile button-hover" style={artBack}></div>
                                         </a>
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                        <div className="contents-container dev">
+                          <div className="content">
+                            <h2 className="what">It me</h2>
+                              <i className="about-text">
+                                <p>As a software engineer with a unique design background I envision a future where separate creative and implementation teams are able to move a product forward in tandem. I have a passion for creating beautiful, functional, rock solid user experiences from within a small agile team.</p>
+                                <p>
+                                My technical capabilities include several development languages and many design suites. But while those tools are currently in my toolbelt, my most valuable skill is my ability to relate previous knowledge to quickly understand new codebases, stacks, technologies.
+                              </p>
+                              </i>
+                          </div>
                         </div>
                     </div>
                     {/* FOOTER */}
@@ -253,28 +265,28 @@ class MainContent extends Component {
                             <div className="contact">
 
                                 <div>
-                                    <a href="https://www.google.com/maps/search/soma/@37.7808154,-122.4111944,15z/data=!3m1!4b1"
+                                    <a target="_blank" href="https://www.google.com/maps/search/soma/@37.7808154,-122.4111944,15z/data=!3m1!4b1"
                                       className="button-hover">
                                         <i className="fa fa-map-marker" aria-hidden="true"></i> San Francisco CA</a>
                                 </div>
                                 <div>
-                                    <a href="tel:+1-850-226-9048" className="button-hover">
+                                    <a target="_blank" href="tel:+1-850-226-9048" className="button-hover">
                                       <i className="fa fa-mobile" aria-hidden="true"></i> +1 (850)226-9048</a>
                                 </div>
                                 <div>
-                                  <a href="mailto:andrewmundy@gmail.com" className="button-hover">
+                                  <a target="_blank" href="mailto:andrewmundy@gmail.com" className="button-hover">
                                     <i className="fa fa-envelope" aria-hidden="true"></i> andrewmundy@gmail.com</a>
                                 </div>
                                 <div>
-                                    <a href="https://github.com/andrewmundy" className="button-hover">
+                                    <a target="_blank" href="https://github.com/andrewmundy" className="button-hover">
                                     <i className="fa fa-github" aria-hidden="true"></i> github.com/andrewmundy</a>
                                 </div>
                                 <div>
-                                  <a href="https://www.linkedin.com/in/andrew-mundy/" className="button-hover">
+                                  <a target="_blank" href="https://www.linkedin.com/in/andrew-mundy/" className="button-hover">
                                     <i className="fa fa-linkedin-square" aria-hidden="true"></i> linkedin.com/andrewmundy</a>
                                 </div>
                                 <div>
-                                  <a href="http://www.ginfoundry.com/cocktail/martini-cocktail/" className="button-hover">
+                                  <a target="_blank" href="http://www.ginfoundry.com/cocktail/martini-cocktail/" className="button-hover">
                                     <i className="fa fa-glass shake" aria-hidden="true"></i> Gin Stirred Twist</a>
                                 </div>
                             </div>
