@@ -259,7 +259,7 @@ class MainContent extends Component {
                           </div>
                         </div>
                         <div className="resume">
-                          <a target="_blank" href="https://docs.google.com/document/d/1tDK2jvYCzbqOoROnntApguzjnI8qA8paVPb8CMYPOug/pub">
+                          <a target="_blank" href="https://dochub.com/andrewmundy12b2b5a8/ajP2OW/andrewmundyresume5-18?dt=tm8ffz50fwv8vr6j">
                           <i className="fa fa-file-text" aria-hidden="true"></i>
                           <p>I'm looking to join a team! 😎</p>
                           </a>
