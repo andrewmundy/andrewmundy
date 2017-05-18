@@ -134,7 +134,7 @@ class MainContent extends Component {
                                 <div className="info-text">
                                     <h2>UCSF CAMS</h2>
                                     <p>While working for UCSF I was responsible for developing tools to reach users of all devices. My team built CAMS from the ground up to help doctors diagnose mental illness in incoming patients. CAMS makes the assessment process asynchronous and allows doctors to view patients on their own time.
-                                        <p>React | Python</p>
+                                        <p>React | Python | Sass | CSS3 Flexbox </p>
                                     </p>
                                 </div>
                             </div>
@@ -175,7 +175,7 @@ class MainContent extends Component {
                                 <div className="info-text">
                                     <h2>SLOW CRM</h2>
                                     <p>This CRM was built for Slow Ventures, a venture capital firm run by ex Facebook Executives. I worked as part of a 4 person team and implemented many Front and Back-End features.</p>
-                                    <p>Javascript | JQuery | Python | Flask</p>
+                                    <p>Javascript | JQuery | Python | Flask | CSS3 Flexbox</p>
                                 </div>
                             </div>
                             {/* POKEQUOTES */}
@@ -183,7 +183,7 @@ class MainContent extends Component {
                               <div className="info-text">
                                 <h2>PokéQuotes</h2>
                                 <p>Fun, engaging, and endlessly inspirational  Pokémon quote generator to spark a user's dreams to catch em all by >103%
-                                  <p>JQuery | CSS3</p>
+                                  <p>Node.JS | JQuery | MongoDB </p>
                                 </p>
                               </div>
                                 <div>
@@ -258,12 +258,12 @@ class MainContent extends Component {
                               </i>
                           </div>
                         </div>
-                        <a target="_blank" href="https://docs.google.com/document/d/1tDK2jvYCzbqOoROnntApguzjnI8qA8paVPb8CMYPOug/pub">
-                          <div className="resume">
-                            <i className="fa fa-file-text" aria-hidden="true"></i>
-                            <p>I'm looking to join a team! 😎</p>
-                          </div>
-                      </a>
+                        <div className="resume">
+                          <a target="_blank" href="https://docs.google.com/document/d/1tDK2jvYCzbqOoROnntApguzjnI8qA8paVPb8CMYPOug/pub">
+                          <i className="fa fa-file-text" aria-hidden="true"></i>
+                          <p>I'm looking to join a team! 😎</p>
+                          </a>
+                        </div>
                     </div>
                     {/* FOOTER */}
                     <div className="footer">

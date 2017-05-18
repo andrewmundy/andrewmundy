@@ -24,6 +24,9 @@ $sm-width: 100%;
 $title-lg: -10px 10px 0 rgba(255,255,255,0.4), -20px 20px 0 rgba(255,255,255,0.4);
 $title-md-shadow: -2px 2px 0 rgba(255, 255, 255, 0.55), -4px 4px 10px rgba(0, 0, 0, 0.08);
 $splash-title: -3px 3px 0 rgba(255,255,255,0.4), -6px 6px 0 rgba(255,255,255,0.4);
+$text-shadow: -1px 1px 1px rgba(0, 0, 0, 0.08);
+$font-size: 0.8rem;
+$box-size: 15rem;
 
 a {
     text-decoration: none;
@@ -34,6 +37,7 @@ body {
     font-family: $font-main;
     background: $main-gradient;
     margin: 0;
+    font-size: $font-size;
 }
 
 p {
@@ -43,16 +47,27 @@ p {
     word-wrap: break-word;
     word-break: break-word;
 }
+
 .resume{
+  background: rgba(0,0,0,0.05);
+  border-radius: 0.2rem;
+  box-shadow: inset 0px 7px 0px rgba(0, 0, 0, 0.05);
   padding: 2rem;
   max-width: 300px;
   margin: auto;
   color:white;
   text-align: center;
+  z-index: 1;
 }
 .resume i{
   font-size: 4rem;
-  box-shadow: $splash-title;
+  border-radius: 0.2rem;
+
+  -webkit-box-shadow: $splash-title;
+          box-shadow: $splash-title;
+}
+.resume p{
+  text-shadow: $text-shadow;
 }
 
 .quote {
@@ -62,14 +77,13 @@ p {
 
 .line {
     color: rgba(255, 255, 255, 0.8);
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 100;
     font-style: italic;
     text-align: center;
     max-width: 80%;
-    padding: 1rem;
     border-radius: 0.2rem;
-    margin: -7rem auto;
+    margin: -6rem auto;
 }
 
 .stroke {
@@ -107,7 +121,7 @@ p {
 .pointer {
     padding: 0 1.5rem;
     font-size: 2.5rem;
-    text-shadow: 0 3px 3px rgba(0,0,0,0.3);
+    text-shadow: $text-shadow;
 }
 
 .pointer h6 {
@@ -189,7 +203,7 @@ p {
 }
 
 .what {
-    font-size: 3rem;
+    font-size: 2rem;
     margin: 0;
     color: white;
     padding: 2rem;
@@ -198,23 +212,23 @@ p {
 }
 
 .info-text {
-    font-size: 1rem;
+    font-size: $font-size;
     text-align: left;
-    max-width: 20rem;
+    max-width: $box-size;
     color: white;
-    text-shadow: -1px 1px 1px rgba(0, 0, 0, 0.08);
+    text-shadow: $text-shadow;
 }
 .about-text{
-  padding:1rem;
+  padding:$font-size;
   color: white;
-  text-shadow: -1px 1px 1px rgba(0, 0, 0, 0.08);
+  text-shadow: $text-shadow;
 }
 
 .content {
-  font-weight: 100;
+    font-weight: 100;
     max-width: 90%;
-    margin: 0 0 2rem;
-    padding: 0 5rem 3rem;
+    margin: 0 auto 2rem;
+    padding: 0 0 2rem;
 }
 
 .header {
@@ -242,7 +256,7 @@ p {
             align-items: center;
     -ms-flex-wrap: wrap-reverse;
         flex-wrap: wrap-reverse;
-    padding: 1rem 2rem;
+    padding: 1rem;
 }
 
 .banner {
@@ -262,7 +276,6 @@ p {
 }
 
 .logo-lower {
-    width: 15rem;
     padding: 2rem;
     -webkit-filter: opacity(0.5);
             filter: opacity(0.5);
@@ -292,7 +305,7 @@ p {
 }
 
 .splash {
-    padding: 10rem 0 2rem;
+    padding: 3rem 0 0rem;
     width:$sm-width;
 }
 
@@ -301,7 +314,7 @@ p {
     position: absolute;
     z-index: 0;
     margin-top: -6rem;
-    border-radius: 20rem;
+    border-radius: $box-size;
 }
 
 .heading {
@@ -323,12 +336,13 @@ p {
 }
 
 .contact {
-    line-height: 2rem;
-    font-size: 1.3rem;
+    line-height: 1rem;
+    font-size: $font-size;
     text-align: left;
+    text-shadow: $text-shadow;
 }
 .copy {
-    margin: 4rem 0 2rem;
+    margin: 0 0 2rem;
     color: rgba(255,255,255,0.5);
 }
 
@@ -342,8 +356,8 @@ p {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 20rem;
-    height: 20rem;
+    width: $box-size;
+    height: $box-size;
     background-size: cover;
     color: white;
     margin: 2rem 0;
@@ -354,14 +368,14 @@ p {
 
 .project-tile p.title {
     margin-bottom: 0;
-    font-size: 3rem;
+    font-size: 1rem;
     text-align: center;
     background: $title-gradient;
     padding: 0.5rem;
 }
 
 .project-tile .description {
-    font-size: 2rem;
+    font-size: 0.7rem;
     font-weight: 100;
     font-style: italic;
 }
@@ -401,6 +415,7 @@ p {
     color: white;
     margin: 1rem;
     font-size: 3rem;
+    text-shadow: $text-shadow;
 }
 
 .contents {
@@ -416,8 +431,8 @@ p {
 }
 
 .icon {
-    width: 10rem;
-    margin: 10rem 0 2rem;
+    width: 5rem;
+    margin: 6rem 0 2rem;
     padding: 0 5rem;
 }
 
@@ -658,7 +673,7 @@ div.icons > div > p {
 
     .logo-lower {
         margin: -15rem auto;
-        padding: 15rem 0 2rem;
+        padding: 0rem 0 2rem;
         width: 15rem;
         -webkit-filter: opacity(30%);
                 filter: opacity(30%);
