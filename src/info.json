@@ -1,0 +1,43 @@
+[
+{
+  "id": {
+    "id": 1
+    },
+    "url": "http://res.cloudinary.com/dww7y2fbv/image/upload/v1495402371/img1_yfcjei.jpg",
+    "title":"CAMS",
+    "blurb": "React Mental Health Communication Platform",
+    "thumbnail": "https://s3-us-west-2.amazonaws.com/am-portfolio-images/cams.png",
+    "description": "While working for UCSF I was responsible for developing tools to reach users of all devices. My team built CAMS from the ground up to help doctors diagnose mental illness in incoming patients. CAMS makes the assessment process asynchronous and allows doctors to view patients on their own time.",
+    "technologies": {
+      "font-end":"React",
+      "back-end":"Python",
+      "additional":["Sass","CSS3","Flexbox"]
+    },
+    "img": {
+      "first":"https://s3-us-west-2.amazonaws.com/am-portfolio-images/test.jpg",
+      "second":"https://s3-us-west-2.amazonaws.com/am-portfolio-images/bartindre.png",
+      "last":"https://s3-us-west-2.amazonaws.com/am-portfolio-images/cams.png"
+    }
+},
+{
+  "id": {
+    "id": 2
+    },
+    "id": 2,
+    "url": "http://res.cloudinary.com/dww7y2fbv/image/upload/v1495402371/img1_yfcjei.jpg",
+    "title":"Bartindre",
+    "blurb": "Flask Cocktail Recipe Platform",
+    "thumbnail": "https://s3-us-west-2.amazonaws.com/am-portfolio-images/bartindre.gif",
+    "description": "Social network for creating, sharing, rating and saving cocktail recipes in an engaging and playful way.",
+    "technologies": {
+      "font-end":"Python",
+      "back-end":"SQL",
+      "additional":["Flask","Jinja2","Flexbox"]
+    },
+    "img": {
+      "first":"https://s3-us-west-2.amazonaws.com/am-portfolio-images/test.jpg",
+      "second":"./test.jpg",
+      "last":"./test.jpg"
+    }
+  }
+]
