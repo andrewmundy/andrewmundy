@@ -1,13 +1,13 @@
 import React, {Component} from 'react';
 import './App.css';
-import Under from '../images/char.png';
+import under from '../images/guy.svg';
 
 class UnderConstruction extends Component {
   render(){
     return(
       <div className="flex-center">
-        <img className="under" src={Under}/>
-        <div className="text-shadow">
+        <img className="under" src={under}/>
+        <div className="text-shadow underconstruction">
           <h1 className="title">
             The things?! Where are they?
           </h1>

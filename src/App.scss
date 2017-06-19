@@ -63,8 +63,10 @@ p {
   font-size: 1rem;
   font-weight: 100;
   text-align: center;
-  width: 400px;
   margin: 5rem auto;
+}
+.underconstruction{
+  width: 600px;
 }
 
 .title {
@@ -78,14 +80,16 @@ p {
   font-weight: 200;
   font-size: 2rem;
 }
+
 .blurb p{
   text-align: left;
 }
-
 .under {
   width: 400px;
+  height: 400px;
   padding: 3rem;
 }
+
 /////////////////////
 .opacity-50 {
   opacity: 0.5;
@@ -320,12 +324,6 @@ p {
   -ms-flex-wrap: wrap-reverse;
   flex-wrap: wrap-reverse;
   padding: 1rem;
-}
-
-.banner {
-  background: url("'../images/trop1.jpg'");
-  width: 100px;
-  height: 100px;
 }
 
 .projects {
@@ -723,6 +721,9 @@ div.icons > div > p {
     margin-left: -20rem;
     margin-top: -3rem;
   }
+  .underconstruction{
+    width: 300px;
+  }
   .blurb{
     margin: 0;
   }
@@ -872,6 +873,7 @@ div.icons > div > p {
 
   .under {
     width: 300px;
+    padding: 0;
   }
 }
 @media (min-device-width: 400px) and (max-device-width: 800px) {
@@ -880,6 +882,9 @@ div.icons > div > p {
     width: 100%;
     margin-left: 0;
     margin-top: 0;
+  }
+  .underconstruction{
+    width: 400px;
   }
 
   .info {
@@ -991,6 +996,6 @@ div.icons > div > p {
   bottom: 0;
   left: 0;
   right: 0;
-  opacity: 0.4;
+  opacity: 0.2;
   background-image: url("../images/texture.png");
 }
