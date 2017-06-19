@@ -1,24 +1,25 @@
 import React, {Component} from 'react';
 import './App.css';
-import Under from '../images/Under.png';
+import Under from '../images/char.png';
 
 class UnderConstruction extends Component {
   render(){
     return(
       <div className="flex-center">
         <img className="under" src={Under}/>
-        <div className="blurb">
-          <h1 className="header">
-            😱 Wait! Where are all of the things?! 😱
+        <div className="text-shadow">
+          <h1 className="title">
+            The things?! Where are they?
           </h1>
-          <h2>
-            <i>everything's cool, don't worry</i>
-          </h2>
+          <div className="blurb">
+          <i>Everything's cool, don't worry.</i>
           <p>
-            I have been working really hard on wrapping up v2 of andrewmundy.net. So please check back soon because I have some really cool things planned for ya'll and I can't wait to show you what I've been up to.
+            I've been working really hard on wrapping up v2 of andrewmundy dot net. So please check back soon because I have some really cool things that I can't wait to show y'all.
           </p>
+          🌴🤓🌴
         </div>
       </div>
+    </div>
     )
   }
 };
