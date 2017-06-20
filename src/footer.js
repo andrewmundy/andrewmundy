@@ -8,7 +8,6 @@ render(){
     <div className="footer">
         <div className="footing">
             <div className="contact">
-
                 <div>
                     <a target="_blank" href="https://www.google.com/maps/search/soma/@37.7808154,-122.4111944,15z/data=!3m1!4b1"
                       className="button-hover">
@@ -35,14 +34,14 @@ render(){
                     <i className="fa fa-glass shake" aria-hidden="true"></i> Gin Stirred Twist</a>
                 </div>
             </div>
-            <img alt="logo" className="logo-lower button-hover" src={logo}/>
+            {/* <img alt="logo" className="logo-lower button-hover" src={logo}/> */}
+            <div className="resume">
+              <a target="_blank" href="https://dochub.com/andrewmundy12b2b5a8/4LRNEq/andrewmundyresume5-22?dt=ztdr2u7n9mawibe7">
+              <i className="fa fa-file-text" aria-hidden="true"></i>
+              <p>I'm looking to join a team! 😎</p>
+            </a>
+          </div>
         </div>
-        <div className="resume">
-          <a target="_blank" href="https://dochub.com/andrewmundy12b2b5a8/4LRNEq/andrewmundyresume5-22?dt=ztdr2u7n9mawibe7">
-          <i className="fa fa-file-text" aria-hidden="true"></i>
-          <p>I'm looking to join a team! 😎</p>
-        </a>
-      </div>
         <div className="copy">© Andrew Mundy 1988</div>
     </div>
     )
