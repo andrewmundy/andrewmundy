@@ -11,10 +11,10 @@ import Footer from './footer.js';
 class Main extends Component {
   render() {
     return (
-      <div className="body">
-        <div className="fakebody ">
+      <div className="body noise">
+        <Nav className="nav"/>
+        <div className="fakebody">
           <div className="containment">
-            <Nav className="nav"/>
             <UnderConstruction/>
             {/* <Route className="user_header" exact path="/" component={Home} /> */}
             <Footer/>

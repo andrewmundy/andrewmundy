@@ -1,0 +1,22 @@
+{
+  "gradients":[
+  "200deg, #84fab0 0%,#8fd3f4 100%",
+  "120deg, #fa5b42, #ffb88c",
+  "100deg, #ddd6f3, #faaca8",
+  "135deg, #00d8ff 0%, #7db9e8 100%",
+  "135deg, rgb(151, 70, 214), #30E8BF",
+  "135deg, #ffafbd, #ffc3a0",
+  "135deg, #cc95c0, #dbd4b4, #7aa1d2",
+  "135deg, #34e89e, #0f3443",
+  "135deg, #6190e8,#a7bfe8",
+  "135deg, #43C6AC,#191654",
+  "135deg, #ee0979,#ff6a00",
+  "135deg, #a770ef, #cf8bf3, #fdb99b",
+  "135deg, #00c3ff, #ffff1c",
+  "135deg, #de6161, #2657eb",
+  "135deg, #ef32d9, #89fffd",
+  "120deg, #808080, #3fada8",
+  "100deg, #e96443, #904e95",
+  "120deg, #b993d6, #8ca6db"
+  ]
+}

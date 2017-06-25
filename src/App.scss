@@ -37,6 +37,7 @@ body {
   font-family: $font-main;
   margin: 0;
   font-size: $font-size;
+  background:rgb(36, 36, 36);
 }
 
 p {
@@ -50,19 +51,26 @@ p {
 .text-shadow {
   text-shadow: $text-shadow;
 }
+.italic{
+  font-style: italic;
+}
+h1 i.button-big{
+  margin: 2rem;
+  font-size: 8rem;
+}
 //////////////////////
 //UNDER CONSTRUCTION//
 //////////////////////
 
 .blurb {
   color: white;
-  padding: 2rem;
+  padding: 0.1rem 1.5rem;
   border-radius: 0.3rem;
   margin: 2rem;
   font-size: 1rem;
   font-weight: 100;
   text-align: center;
-  margin: 5rem auto;
+  margin: 0 0 3rem;
 }
 .underconstruction{
   width: 600px;
@@ -75,13 +83,15 @@ p {
   font-weight: 100;
 }
 
-.blurb i {
+.blurb-well i {
   font-weight: 200;
   font-size: 2rem;
 }
 
 .blurb p{
   text-align: left;
+  max-width: 400px;
+  margin: auto;
 }
 .under {
   width: 650px;
@@ -322,7 +332,7 @@ p {
 }
 
 .logo {
-  width: 3.5rem;
+  width: 2.5rem;
   padding: 1rem;
   fill: white;
 }
@@ -371,13 +381,12 @@ p {
 }
 
 .heading {
-  padding: 1rem;
-  top: 0;
-  position: -webkit-sticky;
-  position: sticky;
-  height: 80px;
-  z-index: 100;
-  margin: auto;
+  // position: -webkit-sticky;
+  // position: sticky;
+  top: 0px;
+  height: 65px;
+  width: 100%;
+  // background: rgba(255,255,255,0.2);
 }
 
 .heading-contents {
@@ -390,9 +399,13 @@ p {
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
-  width: 95%;
   margin: auto;
   z-index: 100;
+  width: 1000px;
+  z-index: 1000;
+}
+.link{
+  text-decoration: underline;
 }
 
 .footer {
@@ -480,8 +493,8 @@ p {
 
 .social * {
   color: white;
-  margin: 1rem;
-  font-size: 3rem;
+  margin: 1rem 0.5rem;
+  font-size: 2rem;
   text-shadow: $text-shadow;
 }
 
@@ -494,7 +507,6 @@ p {
   margin: auto;
   position: relative;
   overflow-x: hidden;
-  overflow-y: hidden;
 }
 
 .icon {
@@ -712,8 +724,14 @@ div.icons > div > p {
     margin-left: -20rem;
     margin-top: -3rem;
   }
+
+  h1 i.button-big {
+    margin: 0.5rem;
+    font-size: 4rem;
+  }
+
   .underconstruction{
-    width: 300px;
+    width: 290px;
   }
   .blurb{
     margin: 0;
@@ -745,7 +763,7 @@ div.icons > div > p {
 
   .social * {
     font-size: 2rem;
-    margin: 1.5rem 0.5rem;
+    margin: 1rem 0.5rem;
   }
 
   .splash h1 {
@@ -859,11 +877,10 @@ div.icons > div > p {
   }
 
   .heading {
-    padding: 0 1rem;
   }
 
   .under {
-    width: 75%;
+    width: 100%;
     padding: 1rem;
   }
 }
@@ -894,6 +911,7 @@ div.icons > div > p {
 
   .containment {
     width: 90%;
+    overflow-x: hidden;
   }
 
   .project-tile {
@@ -903,6 +921,11 @@ div.icons > div > p {
 
   .heading-contents {
     width: 100%;
+  }
+
+  h1 i.button-big {
+    margin: 1rem;
+    font-size: 5rem;
   }
 }
 /* ----------- Small Monitor ----------- */
@@ -989,6 +1012,7 @@ div.icons > div > p {
   right: 0;
   opacity: 0.2;
   background-image: url("../images/texture.png");
+  background-color: rgba(0,0,0,0.08);
 }
 
 .blurb-well{
@@ -1005,7 +1029,7 @@ div.icons > div > p {
   left: 0;
   right: 0;
   opacity: 1;
-  background-image: url("../images/texture.png");
-  background-color: rgba(0,0,0,0.05);
+  filter: invert(100%);
+  background-color: rgba(0,0,0,0.2);
   border-radius: 1rem;
 }
