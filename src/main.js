@@ -16,6 +16,7 @@ class Main extends Component {
         <div className="fakebody">
           <div className="containment">
             <UnderConstruction/>
+            {/* TODO: put content */}
             {/* <Route className="user_header" exact path="/" component={Home} /> */}
             <Footer/>
           </div>
