@@ -36,9 +36,9 @@ a {
 body {
   font-family: $font-main;
   margin: 0;
-  box-shadow: 1px 0px brown;
   font-size: $font-size;
-  background:rgb(36, 36, 36);
+  // background:rgb(36, 36, 36);
+  background-image: url("../images/pattern.png");
 }
 
 p {
