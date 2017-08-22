@@ -36,8 +36,9 @@ a {
 body {
   font-family: $font-main;
   margin: 0;
+  box-shadow: 1px 0px brown;
   font-size: $font-size;
-  background:red;
+  background:rgb(36, 36, 36);
 }
 
 p {
